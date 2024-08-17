@@ -10,8 +10,9 @@ body {
 }
 
 .main-header {
-  background-color: #f7f7f7;
+  height: 80px;
   padding: 20px;
+  background-color: #f7f7f7;
 }
 
 nav a:link {
@@ -27,10 +28,11 @@ article {
 }
 
 aside {
-  background-color: #f7f7f7;
-  border: 5px solid #1098ad;
+  width: 500px;
   padding: 50px 0;
   margin-bottom: 60px;
+  border: 5px solid #1098ad;
+  background-color: #f7f7f7;
 }
 
 h1,
@@ -127,6 +129,11 @@ a:hover {
   color: orangered;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
 
 #copyright {
