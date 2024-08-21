@@ -16,15 +16,29 @@ body {
 }
 
 .main-header {
-  height: 80px;
-  padding: 20px;
-  margin-bottom: 50px;
+  padding: 20px 40px;
+  margin-bottom: 60px;
   background-color: #f7f7f7;
+  background-color: red;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 nav {
   font-size: 16px;
   text-align: center;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
 }
 
 article {
@@ -65,6 +79,36 @@ h1 {
   text-transform: uppercase;
   font-style: italic;
 }
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h1 {
+  float: left;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #ffe70e;
+  color: #444;
+  border-radius: 35px;
+  display: inline-block;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
 
 h2 {
   font-size: 40px;
@@ -187,39 +231,4 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
-}
-
-h1::first-letter {
-  font-style: normal;
-  margin-right: 5px;
-}
-
-h2 {
-  position: relative;
-}
-
-h2::after {
-  content: "TOP";
-  font-size: 16px;
-  font-weight: bold;
-  padding: 5px 10px;
-  background-color: #ffe70e;
-  color: #444;
-  border-radius: 35px;
-  display: inline-block;
-  position: absolute;
-  top: -15px;
-  right: -25px;
-}
-
-/* h3 + p::first-line {
-  color: red;
-} */
-
-h1 {
-  float: left;
-}
-
-nav {
-  float: right;
 }
