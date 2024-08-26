@@ -123,7 +123,7 @@ li:last-child {
 }
 
 .related-author {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -157,6 +157,7 @@ article p:first-child {
 a:link {
   color: #1098ad;
   text-decoration: none;
+  font-size: 14px;
 }
 
 a:visited {
@@ -184,7 +185,6 @@ a:active {
 nav a:link {
   display: inline-block;
   margin-right: 30px;
-  margin-top: 10px;
 }
 
 nav a:link:last-child {
@@ -247,7 +247,7 @@ footer p {
 nav p {
   font-size: 18px;
 } */
-
+/*
 .author {
   float: left;
   margin: 10px 0px 0px 20px;
@@ -269,7 +269,7 @@ nav {
 /* .clear {
   clear: both;
 } */
-
+/*
 .clearfix::after {
   content: "";
   clear: both;
@@ -288,4 +288,43 @@ aside {
 
 footer {
   clear: both;
+}
+*/
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
+.related-author {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
 }
